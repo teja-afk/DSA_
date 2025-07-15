@@ -12,37 +12,6 @@ This repo is a collection of my personal DSA practice and learning journey — i
 
 ---
 
-## 📁 Folder Structure
-
-DSA-in-CPP/
-│
-├── Array/
-├── Arrays/
-├── Basic Math & Pointer/
-├── Bitwise Operator/
-├── Char Array & Strings/
-├── DnC && Backtracking/
-├── Dynamic Programming/
-├── Function/
-├── Graph/
-├── Header Files/
-├── Heap/
-├── LinkedList/
-├── Maps & Tries/
-├── OOPS/
-├── Patters/
-├── Queue/
-├── Recursion/
-├── Searching/
-├── Sorting/
-├── Stack/
-├── STL/
-├── Trees/
-├── Vectors_STL/
-└── README.md
-
-
-
 > 📌 Each folder contains problems and their solutions with meaningful filenames.
 
 ---
