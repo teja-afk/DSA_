@@ -94,7 +94,6 @@ int getLength(Node *head)
     return len;
 }
 
-
 // LC
 // 5 / 2 = 2
 // O(n) + O(n/2) => O(n)
@@ -137,8 +136,6 @@ int findMidTotoiseApproach(Node *&head)
     }
     return slow->data;
 }
-
-
 
 void insertAtPosition(int position, int value, Node *&head, Node *&tail)
 {

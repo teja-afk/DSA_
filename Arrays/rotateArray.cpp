@@ -8,8 +8,7 @@ void printArray(int arr[], int size){
   cout << endl;
 }
 
-void rotateArray(int arr[], int size, int shift){
-  
+void rotateArray(int arr[], int size, int shift){ // TC : O(n) , SC : O(n)
   int finalShift = shift%size;
   if(shift == 0){
     return;
@@ -34,6 +33,14 @@ void rotateArray(int arr[], int size, int shift){
     arr[i] = temp[i];
   }
 
+}
+
+void rotate(vector<int>& nums, int k) { // TC : O(n) , SC : O(1)
+  int n = nums.size();
+  k = k % n;
+  reverse(nums.begin(), nums.end());
+  reverse(nums.begin(), nums.begin() + k);
+  reverse(nums.begin() + k, nums.end());
 }
 
 int main(){

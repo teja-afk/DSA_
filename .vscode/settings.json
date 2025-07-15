@@ -62,6 +62,13 @@
     "iostream": "cpp",
     "functorstudent,cpp": "c",
     "vector": "cpp",
-    "cmath": "cpp"
-  }
+    "cmath": "cpp",
+    "queue": "cpp",
+    "map": "cpp",
+    "cstdlib": "cpp",
+    "unordered_map": "cpp",
+    "string": "cpp",
+    "string_view": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }
