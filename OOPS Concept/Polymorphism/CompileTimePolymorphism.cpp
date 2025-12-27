@@ -3,14 +3,12 @@ using namespace std;
 
 // Compile Time Polymorphism / Static
 // Function Overloading
-class Complex
-{
+class Complex{
 public:
     int real;
     int img;
 
-    Complex()
-    {
+    Complex(){
         real = img = -1;
     }
 
@@ -47,10 +45,10 @@ public:
     bool operator == (const Complex &B)
     {
         // this-> A instance
-        return (this->real == B.real) && (this->img == B.img); 
+        return (this->real == B.real) && (this->img == B.img);
     }
 
-    void print() 
+    void print()
     {
         printf("[%d + i%d]\n", this->real, this->img);
     }

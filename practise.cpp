@@ -23,7 +23,7 @@ int main(){
       a[i][j] = a[i - 1][j - 1] + a[i - 1][j];
     }
   }
-  
+
   cout << "Printing pascal triangle : \n";
   for(int i=0; i<a.size(); i++){
     for(int j=0; j<a[i].size(); j++){
@@ -32,5 +32,5 @@ int main(){
     cout << endl;
   }
 
-  return 0; 
+  return 0;
 }

@@ -94,6 +94,38 @@ public:
     }
 };
 
+
+class Employee{
+private:
+  int id;
+  string name;
+  double salary;
+
+public:
+  Employee(int id, string n, double s){
+    this->id = id;
+    this->name = n;
+    this->salary = s;
+  }
+
+  void display(){
+    cout << "Employee id" << id << endl;
+    cout << "Employee name" << name << endl;
+    cout << "Employee salary" << salary << endl;
+  }
+};
+
+class Manager : public Employee{
+private:
+  double bonus;
+
+public:
+  Manager(int id, string name, double salary, double b) : Employee(id, name, salary){
+    cout << "I am inside Manager Constructor" << endl;
+  }
+
+};
+
 int main()
 {
 
@@ -111,8 +143,15 @@ int main()
     cout << endl;
 
     // Constructor : 1st base class constructor is called & then derived class constructor is called.
-    
+
     // Destructor : 1st derived class destructor is called & then base class destructor is called.
+
+    // Employee E1(101, "Teja", 100000);
+    // E1.display();
+
+    // Manager M1(201, "Manager ", 200000, 10000);
+    // M1.display(); // Manager class does not have display method, but it is inherited from Employee class.
+
 
     return 0;
 }

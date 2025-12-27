@@ -77,15 +77,33 @@ private:
     }
 };
 
+class BankAccount{
+private:
+  int balance;
+
+public:
+  void setBalance(int b){
+    balance = b;
+  }
+
+  int getBalance(){
+    return balance;
+  }
+};
+
 int main(){
 
-    Student A(1, 12, "Teja", 6, 9.8, "Poosa");
-    
-    cout << A.getGpa() << endl; // Not accessing variable gpa directly, Instead via method getGpa
-    A.setGpa(7.7);
-    cout << A.getGpa() << endl;
+    // Student A(1, 12, "Teja", 6, 9.8, "Poosa");
 
-    cout << A.getAge() << endl;
+    // cout << A.getGpa() << endl; // Not accessing variable gpa directly, Instead via method getGpa
+    // A.setGpa(7.7);
+    // cout << A.getGpa() << endl;
+
+    // cout << A.getAge() << endl;
+
+    BankAccount B;
+    B.setBalance(1000);
+    cout << "Bank Balance : " << B.getBalance() << endl;
 
     return 0;
 }
